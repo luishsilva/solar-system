@@ -5,16 +5,12 @@ import { data } from "../data/data";
 // Return example: { key1: value1, key2: value2, ... , keyN: valueN }
 
 export function getAsteroidDataByName(data, asteroidName) {
-  // Your code goes here... 
-  asteroidName = '624 Hektor'
   let result = data.asteroids
   .filter(function(asteroids){
     return asteroids.name.includes(asteroidName)
   })
   return result[0]
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-10"
