@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { maxBy, minBy } from "../exercises/e17";
 
-describe.only("minBy", () => {
+describe("minBy", () => {
   let people = [];
   beforeEach(() => {
     people = [

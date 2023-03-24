@@ -19,13 +19,12 @@ const values = [
   { v: false, id: 1 },
   { v: true, id: 2 },
   { v: true, id: 3 },
-]
+];
 
 function e16(values) {
-  if(values.v === true){
+  if(values.v){
     return { v: values.v, id: values.id }
   }
 }
 
-
-find(values, e16)
+find(values, e16);
