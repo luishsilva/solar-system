@@ -5,15 +5,11 @@ import { data } from "../data/data";
 // Return example: 42
 
 export function allPlanetsMoonsCount(data) {
-  let result = data.planets
-  .filter(function(planets){
-    return planets.moonsCount
-  })
-  .map((planet) => planet.moonsCount)
-  .reduce((acc, value) => acc + value)
-  return result
+  return data.planets
+    .filter((planets) => planets.moonsCount)
+    .map((planet) => planet.moonsCount)
+    .reduce((acc, value) => acc + value);
 }
-
 
 
 // === TEST YOURSELF ===

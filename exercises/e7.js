@@ -7,7 +7,7 @@ import { data } from "../data/data";
 export function getPlanetsNamesWithMoons(data) {
   return data.planets
     .filter((planets) =>  planets.moons)
-    .map((planet) => planet.name)
+    .map((planet) => planet.name);
 }
 
 // === TEST YOURSELF ===

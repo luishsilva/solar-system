@@ -5,11 +5,8 @@ import { data } from "../data/data";
 // Return example: { key1: value1, key2: value2, ... , keyN: valueN }
 
 export function getAsteroidDataByName(data, asteroidName) {
-  let result = data.asteroids
-  .filter(function(asteroids){
-    return asteroids.name.includes(asteroidName)
-  })
-  return result[0]
+  return data.asteroids
+    .find((asteroids) => asteroids.name.includes(asteroidName))
 }
 
 // === TEST YOURSELF ===

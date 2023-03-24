@@ -5,14 +5,9 @@ import { data } from "../data/data";
 // Return example: { key1: value1, key2: value2, ... , keyN: valueN }
 
 export function getEarthData(data) {
-  let result = data.planets
-  .filter(function(planets){
-  return (planets.moons != undefined) ? planets.name.includes('Earth') === true : false
-})
-return result[0]
+  return data.planets
+    .find( (planets) => (planets.moons != undefined) ? planets.name.includes('Earth') === true : false)
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-9"
