@@ -5,8 +5,7 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetNames(data) {
-  let planetNames = data.planets.map(({ name }) => name)
-  return planetNames
+  return data.planets.map(({ name }) => name)
 }
 
 

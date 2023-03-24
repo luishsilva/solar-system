@@ -5,16 +5,10 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetsNamesWithMoons(data) {
-  let result = data.planets
-  .filter(function(planets){
-    return planets.moons
-  }).map(function(planet){
-    return planet.name
-  })
-  return result
+  return data.planets
+    .filter((planets) =>  planets.moons)
+    .map((planet) => planet.name)
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-7"
